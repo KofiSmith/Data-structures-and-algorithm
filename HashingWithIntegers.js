@@ -17,9 +17,9 @@ function simpleHash(data){
     return total%this.table.length;
 }
 
-function put(key){
+function put(key,data){
     var pos = this.simpleHash(key);
-    this.table[pos] = key
+    this.table[pos] = data
 }
 
 function get(key){
