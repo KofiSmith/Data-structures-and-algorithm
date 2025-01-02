@@ -1,0 +1,19 @@
+function Node(data, left, right){
+	this.data = (data===undefined ? 0 :data)
+	this.left = (left===undefined?null:left)
+	this.right= (right===undefined?null:right)
+	this.show = show;
+}
+
+
+
+function BST(){
+	this.root = null;
+	this.insert = insert;
+	this.inOrder = inOrder;
+	this.preOrder = preOrder;
+	this.postOrder = postOrder;
+	this.getMin = getMin;
+	this.getMax = getMax;
+	this.find = find;
+}
