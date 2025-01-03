@@ -17,3 +17,34 @@ function BST(){
 	this.getMax = getMax;
 	this.find = find;
 }
+//function to get data stored in each node
+function show(){
+	return this.data;
+}
+
+//Insert function to create a new node and insert data into it
+
+function insert(data){
+    var n = new Node(data, null, null);
+        if(this.root == null){
+		this.root = n;
+	} else{
+            var curr = this.root;
+	    while(true){
+		parent = curr;
+		if(data < curr.data){
+		    curr = curr.left;
+		    if(curr == null){
+		        parent.left = n;
+			    break;
+		        }
+		    }else{
+			curr = curr.right;
+			if(curr == null){
+			    parent.right = n;
+			    break;
+			    }
+			}
+		}
+	}
+}
