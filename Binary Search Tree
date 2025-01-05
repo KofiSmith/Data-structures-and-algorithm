@@ -43,8 +43,22 @@ function insert(data){
 			if(curr == null){
 			    parent.right = n;
 			    break;
-			    }
-			}
 		}
-	}
+			
+            }
+	} 
+    }
+}
+
+//Funtion to perform inorder traversal
+function inOrder(node){
+	if(!(node == null)){
+	   if(!(node.left===null)){
+		inOrder(node.left)
+		}
+		console.log(node.show())
+           if(!(node.right===null)){
+		inOrder(node.right)
+		}
+	}	
 }
