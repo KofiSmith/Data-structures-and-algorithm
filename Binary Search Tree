@@ -1,12 +1,11 @@
+//BST node
 function Node(data, left, right){
 	this.data = (data===undefined ? 0 :data)
 	this.left = (left===undefined?null:left)
 	this.right= (right===undefined?null:right)
 	this.show = show;
 }
-
-
-
+//Binary search tree
 function BST(){
 	this.root = null;
 	this.insert = insert;
@@ -43,10 +42,10 @@ function insert(data){
 			if(curr == null){
 			    parent.right = n;
 			    break;
-		}
+		    }
 			
-            }
-	} 
+                }
+	   } 
     }
 }
 
