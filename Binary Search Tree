@@ -55,9 +55,17 @@ function inOrder(node){
 	   if(!(node.left===null)){
 		inOrder(node.left)
 		}
-		console.log(node.show())
+		console.log(node.show()+"")
            if(!(node.right===null)){
 		inOrder(node.right)
 		}
 	}	
+}
+
+function preOrder(node){
+	if(!(node == null)){
+		console.log(node.show()+"")
+		preOrder(node.left)
+		preOrder(node.right)
+	}
 }
