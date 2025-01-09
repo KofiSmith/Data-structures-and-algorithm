@@ -1,4 +1,4 @@
-//BST node
+de//BST node
 function Node(data, left, right){
 	this.data = (data===undefined ? 0 :data)
 	this.left = (left===undefined?null:left)
@@ -67,5 +67,12 @@ function preOrder(node){
 		console.log(node.show()+"")
 		preOrder(node.left)
 		preOrder(node.right)
+	}
+}
+function postOrder(node){
+	if(!(node == null)){
+		postOrder(node.left)
+		postOrder(node.right)
+		console.log(node.show()+"")
 	}
 }
