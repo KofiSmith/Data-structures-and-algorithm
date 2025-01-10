@@ -1,4 +1,4 @@
-de//BST node
+//BST node
 function Node(data, left, right){
 	this.data = (data===undefined ? 0 :data)
 	this.left = (left===undefined?null:left)
@@ -69,6 +69,7 @@ function preOrder(node){
 		preOrder(node.right)
 	}
 }
+//Function to perform Post order traversal of the tree
 function postOrder(node){
 	if(!(node == null)){
 		postOrder(node.left)
