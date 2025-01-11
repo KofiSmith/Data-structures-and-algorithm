@@ -77,3 +77,11 @@ function postOrder(node){
 		console.log(node.show()+"")
 	}
 }
+
+function getMin(){
+	var curr = this.root;
+	while(!(curr.left ==null)){
+		curr = curr.left
+	}
+	console.log(curr.data)
+}
