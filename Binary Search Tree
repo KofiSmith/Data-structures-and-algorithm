@@ -77,7 +77,7 @@ function postOrder(node){
 		console.log(node.show()+"")
 	}
 }
-
+//Function to get the minimum value of a tree by traversing to the last node on the left side of the tree
 function getMin(){
 	var curr = this.root;
 	while(!(curr.left ==null)){
