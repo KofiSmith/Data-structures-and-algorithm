@@ -85,6 +85,7 @@ function getMin(){
 	}
 	console.log(curr.data)
 }
+//function to obtain the maximum value on the tree by traversing right of the tree
 function getMax(){
 	var curr = this.root;
 	while(!(curr.right ==null)){
@@ -92,7 +93,7 @@ function getMax(){
 	}
 	console.log(curr.data)
 }
-
+//finding a data and displaying it
 function find(data){
 	var curr = this.root;
 	while(!(curr.data == data)){
