@@ -109,3 +109,23 @@ function find(data){
 	}
 	console.log(curr.data)
 }
+
+//Creating an instance of the BST and inserting data into it
+var nums = new BST()
+nums.insert(1)
+nums.insert(7)
+nums.insert(2)
+nums.insert(3)
+
+console.log("InOrder Traversal")
+inOrder(nums.root)
+console.log("preOrder Traversal")
+preOrder(nums.root)
+console.log("postOrder Traversal")
+postOrder(nums.root)
+console.log("getMax Value")
+nums.getMax()
+console.log("getMin Value")
+nums.getMin()
+console.log("Searched value")
+nums.find(45)
