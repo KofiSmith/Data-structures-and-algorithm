@@ -1,6 +1,4 @@
 //PALINDROME WITH STACK DATA STRUCTURE
-
-
 function Stack(){
     this.dataStore= [];
     this.top = 0;
@@ -22,17 +20,17 @@ function pop(){
 
 //helps to view the element on top of the stack
 function peek(){
-    return this.dataStore[this.top-1]
+    return this.dataStore[this.top-1];
 }
 
 //length returns the nujber of items in the stack
 function length(){
-    return this.top
+    return this.top;
 }
 
 //this makes the stack empty by setting the current capacity of the stack to zero
 function clear(){
-    this.top = 0
+    this.top = 0;
 }
 
 
@@ -40,18 +38,18 @@ function clear(){
 function isPalindrome(word){
     var s = new Stack()
     for(var i = 0; i<word.length; ++i){
-        s.push(word[i])
+        s.push(word[i]);
     }
     var rWord = "";
     while(s.length()>0){
-        rWord += s.peek()
-        s.pop()
+        rWord += s.peek();
+        s.pop();
     }
     
     if(word == rWord){
-        return true
+        return true;
     } else{
-        return false
+        return false;
     }
 }
 
