@@ -1,13 +1,13 @@
-
 //Hashing with integers
 
+//Hash table object
 function HashTable(){
     this.table = new Array();
     this.simpleHash = simpleHash;
     this.put = put;
     this.showDistro = showDistro;
 }
-
+//funnction to hash data
 function simpleHash(data){
     var total = 0;
     for(let i=0;i<data.length;++i){
@@ -17,15 +17,17 @@ function simpleHash(data){
     return total%this.table.length;
 }
 
+//Inserting data into its hashed position 
 function put(key,data){
     var pos = this.simpleHash(key);
     this.table[pos] = data
 }
-
+//Retrieving hashed data with keys
 function get(key){
     return this.table[simpleHash[key]]
 }
 
+//function to display hashed data/values
 function showDistro(){
     for(let i=0;i<this.table.length; ++i){
         if(this.table[i]!=undefined){
